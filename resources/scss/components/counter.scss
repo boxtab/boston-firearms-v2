@@ -1,0 +1,30 @@
+.counter {
+    display: block;
+    overflow: hidden;
+    font-size: 18px;
+    // line-height: 24px;
+    line-height: 1.3;
+    overflow: hidden;
+    padding-bottom: 14px;
+
+    @media (min-width: $tabletVMin) {
+        font-size: 24px;
+        padding-bottom: 18px;
+    }
+
+    span {
+        color: $color-counter;
+        margin: 0;
+        float: left;
+    }
+
+    .divider {
+        color: $color-counter-2;
+        float: left;
+        margin: 0;
+
+        & + span {
+            color: $color-counter-2;
+        }
+    }
+}

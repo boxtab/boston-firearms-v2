@@ -1,0 +1,46 @@
+.map-states-legend {
+  background-color: #1e3c5c;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 23px;
+  padding-right: 23px;
+
+  @media (min-width: $tabletVMin) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .heading-section {
+    margin-bottom: 50px;
+
+    @media (min-width: $tabletVMin) {
+      margin-bottom: 60px;
+    }
+
+    .title {
+      color: #fff;
+      @media (min-width: $tabletVMin) {
+        width: 100%;
+      }
+
+      strong {
+        color: #fff;
+      }
+    }
+  }
+
+  img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    width: 335px;
+
+    @media (min-width: $tabletVMin) {
+      display: block;
+      width: 1168px;
+      max-width: 100%;
+    }
+    @media (min-width: $template1400) {
+    }
+  }
+}

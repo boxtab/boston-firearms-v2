@@ -1,0 +1,25 @@
+.copyright-section {
+  background-color: #eef2f7;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media (min-width: $template1400) {
+    padding-top: 43px;
+    padding-bottom: 46px;
+  }
+
+  p {
+    // font-size: 18px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $color-theme-2;
+    font-family: $font700;
+
+    @media (min-width: $template1400) {
+      // font-size: 25px;
+      font-size: 17px;
+    }
+  }
+}

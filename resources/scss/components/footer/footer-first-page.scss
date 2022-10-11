@@ -1,0 +1,231 @@
+.footer-first-page {
+  background-color: $color-footer;
+
+  width: 100%;
+  overflow: hidden;
+
+  padding-top: 30px;
+  // padding-right: 30px;
+  // padding-left: 30px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tabletVMin) {
+  }
+  @media (min-width: $template1400) {
+    // padding-top: 98px;
+    // padding-left: 107px;
+    // padding-bottom: 94px;
+    // padding-right: 0;
+  }
+
+  .logo-first-footer {
+    margin-bottom: 17px;
+
+    @media (min-width: $tabletVMin) {
+    }
+    @media (min-width: $template1400) {
+      //   margin-bottom: 33px;
+    }
+  }
+
+  p {
+    color: #fff;
+    // font-size: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align-last: left;
+    // font-size: 18px;
+    font-size: 17px;
+
+    @media (min-width: $tabletVMin) {
+      // font-size: 18px;
+    }
+    @media (min-width: $template1400) {
+      // font-size: 18px;
+    }
+  }
+
+  a {
+    color: #fff;
+    // font-size: 15px;
+    font-size: 20px;
+
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+
+    @media (min-width: $tabletVMin) {
+      // font-size: 18px;
+      font-size: 17px;
+    }
+    @media (min-width: $template1400) {
+      //   font-size: 18px;
+    }
+  }
+
+  .social-footer {
+    a {
+      margin-right: 14px;
+
+      @media (min-width: $tabletVMin) {
+      }
+      @media (min-width: $template1400) {
+        // margin-right: 28px;
+      }
+    }
+  }
+  .col {
+    @media (min-width: $tabletVMin) {
+    }
+    @media (min-width: $template1400) {
+      width: 30%;
+      float: left;
+      overflow: hidden;
+      text-align-last: left;
+    }
+  }
+
+  .col-1 {
+    margin-bottom: 30px;
+
+    @media (min-width: $tabletVMin) {
+    }
+    @media (min-width: $template1400) {
+      width: 36%;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 17px;
+      font-family: $font700;
+
+      @media (min-width: $tabletVMin) {
+      }
+
+      @media (min-width: $template1400) {
+        // margin-bottom: 23px;
+        // font-size: 22px;
+        font-weight: 600;
+        // font-stretch: normal;
+        // font-style: normal;
+        // line-height: 3.68;
+        // letter-spacing: -0.22px;
+      }
+    }
+  }
+
+  .col-2 {
+    margin-bottom: 30px;
+
+    @media (min-width: $tabletVMin) {
+    }
+
+    @media (min-width: $template1400) {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 20px;
+
+      @media (min-width: $tabletVMin) {
+        margin-bottom: 45px;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: -0.18px;
+      }
+
+      @media (min-width: $template1400) {
+        // margin-bottom: 45px;
+        // font-size: 18px;
+        // font-weight: 500;
+        // font-stretch: normal;
+        // font-style: normal;
+        // line-height: 2.5;
+        // letter-spacing: -0.18px;
+      }
+    }
+  }
+  .col-3 {
+    p {
+      margin-bottom: 20px;
+      font-family: $font700;
+
+      @media (min-width: $tabletVMin) {
+        // margin-bottom: 30px;
+
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: -0.18px;
+      }
+
+      @media (min-width: $template1400) {
+        // margin-bottom: 30px;
+
+        // font-size: 18px;
+        // font-weight: 500;
+        // font-stretch: normal;
+        // font-style: normal;
+        // line-height: 2.5;
+        // letter-spacing: -0.18px;
+      }
+    }
+  }
+
+  .contact-block {
+    padding-left: 30px;
+
+    @media (min-width: $tabletVMin) {
+    }
+    @media (min-width: $template1400) {
+      padding-left: 44px;
+    }
+
+    a {
+      display: block;
+      font-size: 20px;
+      line-height: 1.5;
+      position: relative;
+
+      @media (min-width: $tabletVMin) {
+        // font-size: 18px;
+        font-size: 17px;
+      }
+      @media (min-width: $template1400) {
+        // font-size: 24px;
+      }
+
+      .ico {
+        position: absolute;
+        display: block;
+        left: -28px;
+        top: 10px;
+
+        @media (min-width: $tabletVMin) {
+        }
+        @media (min-width: $template1400) {
+          left: -40px;
+          top: 10px;
+        }
+      }
+    }
+    span {
+      color: #fff;
+      display: block;
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+
+      @media (min-width: $template1400) {
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

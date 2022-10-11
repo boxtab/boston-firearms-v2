@@ -1,0 +1,75 @@
+.desktop-wide-wrap {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (min-width: $tabletVMin) {
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (min-width: $template1400) {
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1280px;
+  }
+}
+
+.page-checkout {
+}
+
+.page-contact {
+  .header-transparent {
+    background: #fff;
+
+    @media (max-width: 767px) {
+      height: 80px;
+    }
+  }
+}
+
+.page-classes {
+  .philosophy {
+    padding-top: 76px;
+
+    @media (min-width: $template1400) {
+      padding-top: 88px;
+    }
+  }
+  .location-section {
+    .desktop-wide-wrap {
+      padding-top: 3px;
+      padding-top: 3px;
+    }
+  }
+
+  .faq-section-new {
+    .faq-section {
+      padding-bottom: 94px;
+    }
+  }
+  .review-section {
+    .review {
+      .review-title {
+        @media (min-width: $template1400) {
+          margin-bottom: 33px;
+          padding-top: 22px;
+        }
+      }
+    }
+  }
+}
+
+.page-basic-strategy {
+}
+
+.page-39-stage {
+}

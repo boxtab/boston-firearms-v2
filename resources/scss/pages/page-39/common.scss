@@ -1,0 +1,61 @@
+// !!! Temporarily removed from app.scss !!!
+.page-39 {
+  background-color: #eef2f7;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+
+  // @media (max-height: $smallScreenHeight) {
+  //   zoom: $pageZoomMobile;
+  // }
+
+  // @media (min-width: $tabletVMin) and (max-width: $tabletVMax) {
+  //   zoom: $pageZoomTabletV;
+  // }
+
+  // @media (min-width: $desktopLanding) and (max-width: 1200px) {
+  //     zoom: 1.2;
+  // }
+
+  // @media (min-width: $desktopLanding) {
+  //     zoom: 1.2;
+  // }
+
+  // @media (min-width: 1200px) and (max-width: $desktopPre) {
+  //     zoom: 1.2;
+  // }
+
+  @media (min-width: $template1400) {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // .desktop-wide-wrap {
+  //   padding: 0;
+
+  //   @media (min-width: $template1400) {
+  //     padding-left: 50px;
+  //     padding-right: 50px;
+  //   }
+  // }
+
+  .not-sure-section {
+    padding-top: 44px;
+    padding-bottom: 50px;
+
+    @media (min-width: $tabletVMin) {
+      padding-top: 124px;
+      padding-bottom: 124px;
+      background-color: #eef2f7;
+    }
+
+    .button-row {
+      padding-top: 27px;
+
+      @media (min-width: $tabletVMin) {
+        padding-top: 50px;
+      }
+    }
+  }
+}

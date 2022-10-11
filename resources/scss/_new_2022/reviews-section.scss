@@ -1,0 +1,319 @@
+.review-section {
+  background-color: #fff;
+  padding-top: 0px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tabletVMin) {
+    background-color: $color-page-start;
+    padding-top: 54px;
+  }
+  @media (min-width: $template1400) {
+    background-color: $color-page-start;
+    width: 100%;
+    margin-left: 0;
+    padding-top: 66px;
+    padding-bottom: 20px;
+  }
+
+  .review {
+    .review-title {
+      color: #000;
+      font-family: $font700;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1;
+      // font-size: 16px;
+      font-size: 23px;
+      margin-bottom: 19px;
+
+      @media (min-width: $tabletVMin) {
+        // font-size: 20px;
+        font-size: 24px;
+        margin-bottom: 60px;
+      }
+      @media (min-width: $template1400) {
+        // font-size: 27px;
+        font-size: 24px;
+        margin-bottom: 53px;
+      }
+    }
+    .item {
+      width: 100vw;
+      padding-bottom: 50px;
+      background-color: #f6f8fb;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media (min-width: $tabletVMin) {
+        width: 500px;
+        height: 365px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+        padding-bottom: 0;
+      }
+
+      @media (min-width: $template1400) {
+        width: 600px;
+        height: 365px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
+        border-radius: 20px;
+        padding-bottom: 0;
+      }
+    }
+
+    .review-quote {
+      width: 20px;
+      height: 20px;
+      margin-bottom: 18px;
+      margin: auto;
+      background-image: url('/ico/quote.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      margin-top: 68px;
+      margin-bottom: 14px;
+
+      @media (min-width: $template1400) {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 18px;
+        margin-top: 43px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .review-image-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .review-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin-bottom: 13px;
+
+        @media (min-width: $template1400) {
+          width: 58px;
+          height: 58px;
+          margin-bottom: 28px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .review-text {
+      color: #707070;
+      text-align: center;
+      line-height: 1.6;
+      // font-size: 15px;
+      font-size: 17px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      @media (min-width: $tabletVMin) {
+        line-height: 1.5;
+        // font-size: 20px;
+        // font-size: 18px;
+        font-size: 17px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      @media (min-width: $template1400) {
+        // font-size: 18px;
+        line-height: 2.18;
+      }
+    }
+
+    .item.slick-current {
+      background-color: #fff;
+
+      .review-text {
+        color: $color-review;
+      }
+    }
+  }
+
+  .slick-arrow {
+    display: none;
+
+    @media (min-width: $template1400) {
+      display: block;
+    }
+  }
+  .slick-arrow.slick-prev {
+    width: 12px;
+    height: 8px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url('/images/reviews-arrow-left.svg');
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 50% 50%;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+
+    z-index: z('slick-arrow');
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -63px;
+
+    @media (min-width: $tabletVMin) {
+      margin-left: -294px;
+      background-size: 23px;
+      bottom: 47%;
+      background-position: 50% 25px;
+    }
+    @media (min-width: $template1400) {
+      margin-left: -360px;
+      background-size: 23px;
+      bottom: 47%;
+      background-position: 50% 25px;
+    }
+  }
+
+  .slick-arrow.slick-next {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url('/images/reviews-arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 50% 50%;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: z('slick-arrow');
+    position: absolute;
+    bottom: -7px;
+    right: 50%;
+    margin-right: -63px;
+
+    @media (min-width: $tabletVMin) {
+      margin-right: -293px;
+      background-size: 23px;
+      bottom: 47%;
+      background-position: 50% 32px;
+    }
+    @media (min-width: $template1400) {
+      margin-right: -360px;
+      background-size: 23px;
+      bottom: 47%;
+      background-position: 50% 32px;
+    }
+  }
+
+  /* Dots */
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 33px;
+    padding-bottom: 12px;
+
+    @media (min-width: $tabletVMin) {
+      margin-bottom: 75px;
+      padding-bottom: 13px;
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $tabletVMin) {
+      bottom: -25px;
+      padding: 0;
+      margin: 0;
+    }
+
+    text-align: center;
+  }
+  .slick-dots li {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    padding: 0;
+
+    @media (min-width: $tabletVMin) {
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .slick-dots li button {
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    background: transparent;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+
+    @media (min-width: $tabletVMin) {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+    }
+  }
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    outline: none;
+  }
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before {
+    opacity: 1;
+  }
+  .slick-dots li button:before {
+    font-family: 'slick';
+    position: absolute;
+    content: '';
+    text-align: center;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 1px solid #a3b2c4;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+
+    @media (min-width: $tabletVMin) {
+      width: 9px;
+      height: 9px;
+    }
+  }
+  .slick-dots li.slick-active button:before {
+    color: black;
+    background-color: #a3b2c4;
+  }
+}

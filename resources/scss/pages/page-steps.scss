@@ -1,0 +1,71 @@
+.sw-theme-progress {
+  background-color: #fff;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+#quiz-wizard.sw-theme-progress > .nav {
+  flex-direction: row !important;
+}
+
+.page-step {
+  // Question list appearing fix Start
+
+  // display: none;       // !!! Check the script !!!
+  // Question list appearing fix End
+
+  padding-top: 68px;
+  background-color: #fff;
+  max-width: 500px;
+
+  @media (max-height: $smallScreenHeight) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $template1400) {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    min-height: 0;
+  }
+
+  .action-row {
+    margin-bottom: 27px;
+    height: 20px;
+  }
+
+  .question {
+    font-family: $font700;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+
+    @media (min-width: $tabletVMin) {
+      padding-bottom: 15px;
+      font-size: 20px;
+    }
+  }
+
+  .question-no {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    line-height: 2;
+  }
+
+  form {
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .input-block {
+      border-radius: 0px;
+    }
+  }
+
+  .button-row {
+    overflow: hidden;
+  }
+}

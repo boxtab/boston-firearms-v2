@@ -1,0 +1,354 @@
+#schedule-calendar--custom {
+  width: 100%;
+  // border: 0px solid #333333;
+  border-collapse: collapse;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .tr-gap {
+    height: 12px;
+
+    @media (min-width: $template1400) {
+      height: 12px;
+    }
+  }
+
+  .days-of-the-week {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tr-select > div,
+  .tr-bordered > div,
+  .header-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 37px;
+    // height: 38px;
+    height: 37px;
+
+    @media (min-width: $template1400) {
+      width: 50px;
+      height: 50px;
+      font-size: 13px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .tr-days {
+    border: 1px solid #f5faff;
+
+    div {
+      border: 1px solid #f5faff;
+    }
+    .wDays {
+      text-align: center;
+      background-color: #f5faff;
+      color: #000;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: $mobileResponsiveMax) {
+        height: 33px;
+      }
+
+      @media (min-width: $template1400) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .tr-bordered {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border: 1px dashed #cdd9e8;
+    // border-left: 1px dashed #cdd9e8;
+    // border-top: 1px dashed #cdd9e8;
+
+    & > div {
+      // border: 1px dashed #cdd9e8;
+      border-right: 1px dashed #cdd9e8;
+      border-bottom: 1px dashed #cdd9e8;
+      position: relative;
+
+      &:nth-child(1) {
+        border-left: none;
+      }
+      &:nth-child(7),
+      &:nth-child(14),
+      &:nth-child(21),
+      &:nth-child(28),
+      &:nth-child(35),
+      &:nth-child(42) {
+        border-right: none;
+      }
+      &:nth-last-child(7),
+      &:nth-last-child(6),
+      &:nth-last-child(5),
+      &:nth-last-child(4),
+      &:nth-last-child(3),
+      &:nth-last-child(2),
+      &:nth-last-child(1) {
+        border-bottom: none;
+      }
+    }
+
+    .noclass {
+      color: rgba(0, 0, 0, 0.2);
+    }
+
+    .no_opening {
+    }
+
+    .noevent {
+    }
+
+    .event,
+    .witheventt,
+    .withevent {
+      position: relative;
+      cursor: pointer;
+
+      .schedule {
+        position: absolute;
+        z-index: 2;
+        padding: 5px 8px;
+        background-color: #000;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 6px;
+        // top: -30px;
+        left: -40px;
+        bottom: 40px;
+        text-align: left;
+        display: none;
+        white-space: nowrap;
+
+        width: 130px;
+
+        @media (min-width: $tabletVMin) {
+          // left: -90px;
+          width: 200px;
+          left: -50px;
+        }
+
+        @media (min-width: $template1400) {
+          font-size: 14px;
+          // top: -50px;
+          left: -50px;
+          padding: 8px 14px;
+        }
+
+        span {
+          font-size: 14px;
+
+          @media (min-width: $template1400) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      &:hover {
+        .schedule {
+          display: block;
+        }
+      }
+
+      span {
+        text-decoration: none;
+
+        div {
+          text-decoration: none;
+          // color: #ffffff;
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          div {
+            display: inline-block;
+            white-space: break-spaces;
+          }
+
+          a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            padding-top: 7px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .p-year {
+    text-align: center;
+    // font-weight: bold;
+    font-family: $font500;
+    color: #2e2e2e;
+    font-size: 10px;
+    padding-bottom: 7px;
+
+    @media (min-width: $template1400) {
+      font-size: 16px;
+      padding-top: 6px;
+      padding-bottom: 3px;
+    }
+  }
+  .p-month {
+    // font-weight: bold;
+    font-family: $font500;
+    text-align: center;
+    color: #2e2e2e;
+    font-size: 19px;
+    line-height: 1;
+
+    @media (min-width: $template1400) {
+      font-size: 28px;
+    }
+  }
+
+  .tr-select {
+    div {
+      font-size: 11px;
+      text-align: center;
+      padding-bottom: 4px;
+      font-family: $font500;
+      width: 100%;
+
+      @media (min-width: $template1400) {
+        font-size: 14px;
+        padding-bottom: 12px;
+        padding-top: 13px;
+        height: 45px;
+      }
+    }
+  }
+
+  .cMonth {
+    position: relative;
+  }
+
+  .tr-select {
+    text-align: center;
+    margin: auto;
+  }
+
+  .mNav {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 70px;
+    text-align: right;
+
+    position: absolute;
+    top: 8px;
+    right: 2px;
+
+    @media (min-width: $template1400) {
+      width: 140px;
+      top: 17px;
+      right: 0;
+    }
+
+    div {
+      display: inline-block;
+      background-color: #eef2f7;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      cursor: pointer;
+      background-size: cover;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+
+      @media (min-width: $template1400) {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    .a-prev {
+      background-image: url('/svg/cal-prev.svg');
+    }
+    .a-next {
+      background-image: url('/svg/cal-next.svg');
+      margin-left: 8px;
+
+      @media (min-width: $template1400) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .day_listing {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  .days {
+    .day {
+      color: rgba(0, 0, 0, 0.2);
+      font-family: $font500;
+
+      &.event {
+        color: #000;
+      }
+
+      &.today {
+        &:after {
+          display: block;
+          content: '';
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: #ff5872;
+          position: absolute;
+          bottom: 5px;
+          left: 50%;
+          margin-left: -2px;
+          z-index: 1;
+
+          @media (min-width: $template1400) {
+            width: 8px;
+            height: 8px;
+            bottom: 6px;
+            margin-left: -5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.form-block {
+  .title {
+    color: #000;
+    font-size: 17px;
+    margin-bottom: 36px;
+    font-weight: 600;
+    text-align: center;
+
+    @media (min-width: $template1400) {
+      font-size: 19px;
+      margin-bottom: 43px;
+    }
+  }
+  form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    left: 0;
+  }
+
+  .field-block {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 26px;
+
+    @media (min-width: $template1400) {
+      margin-bottom: 20px;
+    }
+
+    .alert.alert-danger {
+      font-size: 12px;
+      color: #d8374f;
+      padding-top: 5px;
+    }
+
+    label {
+      display: block;
+      color: #000;
+      // font-size: 13px;
+      font-size: 14px;
+      margin-bottom: 6px;
+
+      @media (min-width: $template1400) {
+        margin-bottom: 8px;
+      }
+    }
+
+    textarea,
+    input {
+      background-color: transparent;
+      height: 33px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      border: 1px solid transparent;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding-left: 11px;
+      // font-size: 10px;
+      // font-size: 12px;
+      font-size: 14px;
+      width: 100%;
+
+      @include input-placeholder {
+        color: #697280;
+      }
+
+      @media (min-width: $template1400) {
+        height: 40px;
+        padding-left: 14px;
+        font-size: 14px;
+      }
+    }
+
+    textarea {
+      height: 89px;
+      padding-top: 8px;
+
+      @media (min-width: $template1400) {
+        height: 90px;
+        padding-top: 12px;
+      }
+      @media (min-width: $template1400Full) {
+        height: 120px;
+        padding-top: 12px;
+      }
+    }
+  }
+  .form-message {
+    margin-bottom: 20px;
+    color: green;
+  }
+
+  .g-recaptcha {
+    margin: auto;
+    margin-bottom: 20px;
+
+    div {
+      margin: auto;
+    }
+  }
+  .button-row {
+    padding-top: 15px;
+
+    @media (min-width: $template1400) {
+      padding-top: 8px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      font-size: 13px;
+      width: 166px;
+      height: 40px;
+      line-height: 40px;
+      margin: auto;
+
+      @media (min-width: $tabletVMin) {
+        display: block;
+        width: 166px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 13px;
+      }
+      @media (min-width: $template1400) {
+        display: block;
+        font-size: 13px;
+        width: 242px;
+        // height: 51px;
+        // line-height: 51px;
+        height: 46px;
+        line-height: 46px;
+      }
+    }
+  }
+}

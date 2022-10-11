@@ -1,0 +1,54 @@
+.map-with-form {
+  background-color: #1e3c5c;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (min-width: $tabletVMin) {
+  }
+
+  @media (min-width: $template1400) {
+    padding-top: 123px;
+    padding-bottom: 143px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .map-block {
+    display: none;
+    text-align: center;
+
+    @media (min-width: $template1400) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // width: 48%;
+      width: 45%;
+      padding-top: 60px;
+    }
+    
+    img {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .text {
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+
+  .registration-form-block {
+    width: 100%;
+
+    @media (min-width: $template1400) {
+      width: 45%;
+    }
+  }
+}

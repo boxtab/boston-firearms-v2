@@ -1,0 +1,35 @@
+.button {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    color: #fff;
+    background-color: $color-theme;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 6px;
+    // font-family: $font700;
+    font-family: $font500;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    max-width: 330px;
+    margin: auto;
+
+    box-shadow: none;
+    border: 0;
+
+    @media (min-width: $tabletVMin) {
+      font-size: 18px;
+    }
+  }
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+}

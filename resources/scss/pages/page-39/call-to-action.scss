@@ -1,0 +1,94 @@
+.call-to-action-section {
+
+    .heading-section {
+        margin-bottom: 36px;
+
+        @media (min-width: $template1400) {
+            margin-bottom: 60px;
+        }
+
+        .title {
+            color: #fff;
+
+            @media (min-width: $template1400) {
+                width: 300px;
+            }
+
+            strong {
+                color: #fff;
+            }
+        }
+    }
+
+    .cta-list {
+        display: flex;
+        flex-direction: column;
+        
+
+        @media (min-width: $template1400) {
+            flex-direction: row;
+            justify-content: space-between;
+        }   
+
+        .cta-item {
+            display: flex;
+            flex-direction: row;
+
+            padding: 17px 20px 17px 0px;
+            border-radius: 16px;
+
+            background-color: rgba(30, 60, 92, 0.75);
+            border: 1px dashed rgba(204, 215, 229, 0.34);
+            margin-bottom: 12px;
+
+            @media (min-width: $template1400) {
+                flex-direction: column;
+                justify-content: center;
+
+                padding: 38px 44px 0px 44px;
+                height: 200px;
+
+                // width: 400px;
+                width: 30%;
+            }
+
+            .ico {
+                width: 56px;
+                flex-grow: 0;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                @media (min-width: $template1400) {
+                    margin-bottom: 25px;
+                    width: auto;
+                    height: 50px;
+                    flex-grow: 0;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+
+            h5 {
+                color: #fff;
+                text-align: left;
+                font-size: 12px;
+
+                flex-grow: 0;
+                display: flex;
+
+                @media (min-width: $template1400) {
+                    font-size: 12px;
+                    align-items: baseline;
+                    flex-grow: 1;
+                    text-align: center;
+                    justify-content: center;
+                }   
+
+            }
+        }
+    }
+}

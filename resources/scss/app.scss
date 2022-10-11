@@ -1,0 +1,97 @@
+// Base
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+// Components
+@import 'components/ico';
+@import 'components/counter';
+@import 'components/forms';
+@import 'components/buttons';
+@import 'components/logos';
+@import 'components/social';
+@import 'components/images';
+@import 'components/mobile-menu';
+@import 'components/payment/tabs';
+@import 'components/payment/cards';
+@import 'components/payment/calendar';
+
+@import 'components/step/steps';
+@import 'components/step/dots';
+
+@import 'components/main/important';
+@import 'components/main/due-today';
+@import 'components/main/reasons';
+@import 'components/main/course-info';
+@import 'components/main/testimonial';
+@import 'components/main/faq';
+
+// Header variations
+@import 'components/header/header-first-page'; // ** Use  in the quiz _first.php and _how_to.php
+
+// Footer variations
+@import 'components/footer/copyright';
+@import 'components/footer/footer-small';
+@import 'components/footer/footer-small-fixed';
+@import 'components/footer/footer-main';
+@import 'components/footer/footer-first-page';
+
+@import 'components/common';
+
+//Pages
+@import 'pages/page-first';
+@import 'pages/page-main';
+@import 'pages/page-steps';
+@import 'pages/page-start';
+@import 'pages/page-finish';
+@import 'pages/page-payment';
+@import 'pages/page-thankyou';
+@import 'pages/page-fail';
+@import 'pages/page-error';
+@import 'pages/page-faq';
+@import 'pages/page-39';
+
+// Additional pages
+@import '_new_2022/pages-new';
+@import '_new_2022/page-home';
+@import '_new_2022/page-about-us';
+@import '_new_2022/page-lane-reservation';
+@import '_new_2022/page-gift-cards';
+@import '_new_2022/page-flat-content';
+
+// New Page sections
+
+@import '_new_2022/footer-grey';
+@import '_new_2022/location-row';
+@import '_new_2022/map-bg-dark';
+@import '_new_2022/faq-section';
+@import '_new_2022/reviews-section';
+@import '_new_2022/steps-horizontal';
+@import '_new_2022/philosophy';
+@import '_new_2022/hero-home';
+@import '_new_2022/courses-grid';
+@import '_new_2022/who-for';
+@import '_new_2022/map-states-legend';
+@import '_new_2022/form-with-map';
+@import '_new_2022/want-to-try';
+@import '_new_2022/how-much';
+@import '_new_2022/expected';
+@import '_new_2022/want-your-license';
+
+@import '_new_2022/contact-section';
+@import '_new_2022/form-block';
+@import '_new_2022/class-top-section';
+@import '_new_2022/class-form-block.scss';
+@import '_new_2022/class-calendar-block';
+@import '_new_2022/schedule_calendar';
+@import '_new_2022/schedule_calendar--custom'; // ! New custom calendar styles
+@import '_new_2022/who-for-class';
+
+@import '_new_2022/header-transparent'; // ** we have transparent - and white variations in the same file
+
+@import '_new_2022/request-page/request';
+@import '_new_2022/request-page/request-payment';
+@import '_new_2022/request-page/request-success';
+
+// DEV only!!!
+// @import 'dev/dev';

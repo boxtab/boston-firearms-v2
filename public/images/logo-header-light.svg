@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="321" height="47" viewBox="0 0 321 47">
+  <g id="Group_1024" data-name="Group 1024" transform="translate(-25 -67.967)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="6" cy="6" r="6" transform="translate(42 84.967)" fill="#f2203f"/>
+    <g id="crosshair" transform="translate(26 68.966)">
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="22.5" cy="22.5" r="22.5" transform="translate(0 0)" fill="none" stroke="#1e3c5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_12" data-name="Line 12" x1="11" transform="translate(34 24)" fill="none" stroke="#1e3c5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_13" data-name="Line 13" x1="9" transform="translate(0 24)" fill="none" stroke="#1e3c5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_14" data-name="Line 14" y1="10" transform="translate(23 0)" fill="none" stroke="#1e3c5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_15" data-name="Line 15" y1="9" transform="translate(23 36)" fill="none" stroke="#1e3c5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <text id="Boston_Firearms" data-name="Boston Firearms" transform="translate(85 99.967)" fill="#1e3c5c" font-size="28" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">BOSTON</tspan><tspan y="0" xml:space="preserve" font-family="Raleway-Regular, Raleway" font-weight="400"> FIREARMS</tspan></text>
+  </g>
+</svg>

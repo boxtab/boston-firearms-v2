@@ -1,0 +1,33 @@
+.header-39 {
+  padding-top: 67px;
+  // padding-left: 24px;
+  padding-bottom: 52px;
+
+  .action-row {
+    overflow: hidden;
+
+    .ico {
+      float: right;
+      position: relative;
+      top: 5px;
+    }
+    .logo-04 {
+      float: left;
+    }
+  }
+
+  .logo-04 {
+    background-size: 198px;
+    width: 198px;
+    height: 32px;
+    background-image: url('/images/logo-04.svg');
+    background-repeat: no-repeat;
+    display: block;
+
+    @media (min-width: $template1400) {
+      // background-size: 384px;
+      // width: 384px;
+      // height: 62px;
+    }
+  }
+}

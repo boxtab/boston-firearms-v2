@@ -1,0 +1,181 @@
+.course-info-section {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  .info-title {
+    background-color: $color-theme-2;
+    display: inline-block;
+    padding: 7px 11px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: $font700;
+    font-weight: 600;
+    margin-bottom: 26px;
+    color: #fff;
+
+    font-size: 26px;
+    @media (min-width: $tabletVMin) {
+      font-size: 20px;
+    }
+  }
+
+  .info-subtitle {
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: $font700;
+    font-weight: 600;
+    padding: 0 15px;
+
+    font-size: 24px;
+    @media (min-width: $tabletVMin) {
+      font-size: 17px;
+    }
+  }
+
+  .info-switcher {
+    border: dashed 1px $color-important-border;
+    border-bottom: 20px solid white;
+    overflow: hidden;
+    display: flex;
+
+    .info-section-switch {
+      width: 50%;
+      background-color: $color-important-bg;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      height: 140px;
+      justify-content: center;
+
+      color: #79899f;
+      cursor: pointer;
+
+      line-height: 1.5;
+      font-family: $font700;
+      font-weight: 600;
+      text-align: center;
+
+      // font-size: 20px;
+      font-size: 15px;
+      @media (min-width: $tabletVMin) {
+        font-size: 17px;
+      }
+
+      &.active {
+        background-color: $color-reasons-bg;
+        color: white;
+        cursor: auto;
+      }
+    }
+  }
+
+  .info-section {
+    border: dashed 1px $color-important-border;
+
+    .info-block {
+      border-top: dashed 1px $color-important-border;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      &.price {
+        border-top: none;
+        background-color: $color-important-bg;
+        padding-top: 21px;
+        padding-bottom: 20px;
+        color: #000;
+        line-height: 1.7;
+        font-family: $font700;
+        font-weight: 600;
+        text-align: center;
+
+        font-size: 24px;
+        @media (min-width: $tabletVMin) {
+          font-size: 17px;
+        }
+
+        .cost {
+          line-height: 1.5;
+          color: $color-theme;
+
+          font-size: 42px;
+          @media (min-width: $tabletVMin) {
+            font-size: 42px;
+          }
+        }
+      }
+
+      &.description {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 1.7;
+        text-align: center;
+        color: $color-important-description;
+
+        font-size: 20px;
+        @media (min-width: $tabletVMin) {
+          font-size: 15px;
+        }
+
+        .title {
+          line-height: 1.8;
+          margin-bottom: 20px;
+          color: $color-theme;
+
+          font-size: 22px;
+          @media (min-width: $tabletVMin) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      &.curriculum {
+        padding-top: 27px;
+        padding-bottom: 20px;
+        line-height: 1.7;
+        text-align: center;
+        color: $color-important-description;
+
+        font-size: 20px;
+        @media (min-width: $tabletVMin) {
+          font-size: 15px;
+        }
+
+        .title {
+          line-height: 1.5;
+          margin-bottom: 15px;
+          font-weight: 500;
+
+          font-size: 21px;
+          @media (min-width: $tabletVMin) {
+            font-size: 16px;
+          }
+        }
+
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          text-align: center;
+
+          li {
+            text-align: center;
+            line-height: 2.15;
+
+            font-size: 21px;
+            @media (min-width: $tabletVMin) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .button-row {
+        margin-top: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+// HTML style
+.dots-row {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+//     a,
+//     div {
+//         display: block;
+//         width: 45px;
+//         height: 6px;
+//         background-color: $color-dot;
+
+//         &.done,
+//         &.passed {
+//             background-color: $color-dot-passed;
+//         }
+//     }
+}
+
+// Project style
+
+.sw.sw-justified>.nav .nav-link {
+    // flex-grow: 0;
+}
+.sw-theme-progress {
+    border: none;
+
+    & > .nav {
+        flex-direction: row!important;
+        box-shadow: none!important;
+
+        .nav-link {
+            display: block;
+            width: 45px;
+            height: 6px;
+            margin-right: 1px;
+            background-color: $color-dot;
+            padding: 0;
+            box-shadow: none;
+
+            &:after {
+                display: none;
+            }
+
+            &.inactive {
+
+            }
+            &.active,
+            &.done {
+                background-color: $color-dot-passed;
+            }
+        
+        }
+    }
+}

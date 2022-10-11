@@ -1,0 +1,152 @@
+.map-legends {
+  padding-top: 50px;
+
+  .legend--one {
+    overflow: hidden;
+  }
+  .legend--one .legend {
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+    padding-right: 15px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &.clear-mobile {
+      @media (max-width: $mobileResponsiveMax) {
+        clear: both;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .legend--one .legend {
+      width: 33%;
+      padding-right: 20px;
+    }
+  }
+  .legend--one .legend .ico {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #fff;
+  }
+  @media (min-width: 1024px) {
+    .legend--one .legend .ico {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .legend--one .legend .ico.blue {
+    background-color: #167a91;
+  }
+  .legend--one .legend .ico.red {
+    background-color: #d8374f;
+  }
+  .legend--one .legend .ico.transparent {
+    background-color: transparent;
+  }
+  .legend--one .legend .title {
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  @media (min-width: 1024px) {
+    .legend--one .legend .title {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  @media (min-width: 1470px) {
+    .legend--one .legend .title {
+      font-size: 21px;
+      line-height: 18px;
+    }
+  }
+  .legend--two {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 22px;
+    padding-top: 26px;
+    overflow: hidden;
+  }
+  @media (min-width: 1024px) {
+    .legend--two {
+      margin-top: 47px;
+      padding-top: 107px;
+    }
+  }
+  .legend--two .legend {
+    margin-bottom: 35px;
+  }
+  @media (min-width: 1024px) {
+    .legend--two .legend {
+      width: 49%;
+      padding-right: 50px;
+      float: left;
+    }
+  }
+  @media (min-width: 1470px) {
+    .legend--two .legend {
+      width: 49%;
+      padding-right: 50px;
+      float: left;
+    }
+  }
+  .legend--two .legend .title {
+    padding-left: 36px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 1024px) {
+    .legend--two .legend .title {
+      padding-left: 50px;
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+  .legend--two .legend .title .ico {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #fff;
+  }
+  @media (min-width: 1024px) {
+    .legend--two .legend .title .ico {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .legend--two .legend .title .ico.blue {
+    background-color: #167a91;
+  }
+  .legend--two .legend .title .ico.red {
+    background-color: #d8374f;
+  }
+  .legend--two .legend .title .ico.transparent {
+    background-color: transparent;
+  }
+  .legend--two .legend .description {
+    font-size: 11px;
+    line-height: 2.5;
+    color: #fff;
+  }
+  @media (min-width: 1024px) {
+    .legend--two .legend .description {
+      font-size: 14px;
+      line-height: 32px;
+    }
+  }
+  @media (min-width: 1470px) {
+    .legend--two .legend .description {
+      font-size: 16px;
+      line-height: 38px;
+    }
+  }
+}

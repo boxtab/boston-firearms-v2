@@ -1,0 +1,51 @@
+.faq-section--responsive {
+  background-color: #fff;
+  overflow: hidden;
+
+  .faq-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+
+    @media (min-width: $tabletVMin) {
+      padding-top: 92px;
+      padding-bottom: 102px;
+      width: calc(100% - 100px);
+      margin: auto;
+    }
+
+    @media (min-width: $template1400) {
+      width: calc(100% - 300px);
+    }
+
+    .faq-section-title {
+      margin-bottom: 25px;
+
+      @media (min-width: $tabletVMin) {
+        margin-bottom: 53px;
+      }
+    }
+
+    .faq {
+      // TODO: Check this ! (ML)
+      @media (min-width: $template1400) {
+        // width: 30%;
+        // float: left;
+        // margin: 0 3%;
+        // margin: 0 1.5%;
+        // height: 238px;
+
+        &:first-of-type {
+          // margin-left: 0px;
+          // margin-left: -1.5%;
+          // margin: 0;
+        }
+        &:last-of-type {
+          // margin-right: -1.5%;
+          // margin-right: 0;
+          // margin: 0;
+        }
+      }
+    }
+  }
+}

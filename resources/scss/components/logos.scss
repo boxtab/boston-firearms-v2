@@ -1,0 +1,69 @@
+.logo-01 {
+  // width: 284px;
+  // height: 30px;
+  // height: 34px;
+  width: 290px;
+  height: 44px;
+  background-image: url('/images/logo-01.svg');
+  background-repeat: no-repeat;
+  // background-size: contain;
+  background-size: 284px;
+  display: block;
+
+  @media (max-height: $smallScreenHeight) {
+    width: 260px;
+    background-size: 260px;
+  }
+}
+.logo-02 {
+  width: 178px;
+  // height: 65px;
+  height: 68px;
+  background-image: url('/images/logo-02.svg');
+  background-repeat: no-repeat;
+  // background-size: contain;
+  background-size: 178px;
+  display: block;
+}
+.logo-03 {
+  width: 172px;
+  // height: 27px;
+  height: 30px;
+  background-image: url('/images/logo-03.svg');
+  background-repeat: no-repeat;
+  background-size: 172px;
+  display: block;
+}
+.logo-04 {
+  background-size: 198px;
+  width: 198px;
+  height: 32px;
+  background-image: url('/images/logo-04.svg');
+  background-repeat: no-repeat;
+  display: block;
+}
+.logo-first-footer {
+  width: 194px;
+  // height: 28px;
+  height: 32px;
+  background-image: url('/images/logo-footer.svg');
+  background-repeat: no-repeat;
+  background-size: 194px;
+  display: block;
+
+  &.grey {
+    background-image: url('/images/logo-03.svg');
+    height: 40px;
+  }
+
+  // @media (min-width: $template1400) {
+  //   width: 483px;
+  //   // height: 68px;
+  //   height: 74px;
+  //   background-size: 478px;
+
+  //   &.grey {
+  //     height: 82px;
+  //   }
+  // }
+}

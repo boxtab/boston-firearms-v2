@@ -1,0 +1,252 @@
+.form-with-map {
+  background-color: #1e3c5c;
+
+  padding-top: 57px;
+  padding-bottom: 55px;
+
+  @media (min-width: $tabletVMin) {
+    // padding-left: 24px;
+    // padding-right: 24px;
+  }
+  @media (min-width: $template1400) {
+    padding-top: 93px;
+    padding-bottom: 106px;
+  }
+
+  .desktop-wide-wrap {
+    @media (min-width: $template1400) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .map-block {
+    display: none;
+    text-align: center;
+
+    @media (min-width: $template1400) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 47%;
+      padding-top: 30px;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .text {
+      text-align: center;
+      // font-size: 18px;
+      font-size: 17px;
+      color: #fff;
+    }
+  }
+
+  .form-block {
+    width: 100%;
+
+    @media (min-width: $template1400) {
+      width: 46%;
+    }
+
+    form {
+      margin: 0;
+      // padding: 0 20px;
+      padding: 0;
+
+      @media (min-width: $template1400) {
+        padding: 0;
+      }
+    }
+
+    .title {
+      color: #ff8698;
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      text-align: left;
+
+      @media (min-width: $template1400) {
+        font-size: 27px;
+        margin-bottom: 26px;
+      }
+    }
+
+    .cost-block {
+      color: #fff;
+      background-color: #17314d;
+      padding: 14px 12px;
+      border: 1px dashed #cdd9e8;
+      margin-bottom: 32px;
+
+      @media (min-width: $template1400) {
+        padding: 24px 30px 20px 21px;
+        margin-bottom: 40px;
+      }
+
+      span {
+        display: block;
+
+        font-size: 14px;
+        line-height: 1.7;
+
+        @media (min-width: $template1400) {
+          display: inline-block;
+          font-size: 15px;
+          line-height: 1;
+        }
+      }
+
+      .separator {
+        display: none;
+
+        @media (min-width: $template1400) {
+          display: inline-block;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .field-block {
+      margin-bottom: 24px;
+      box-sizing: border-box;
+      position: relative;
+
+      width: 100%;
+
+      @media (min-width: $template1400) {
+        width: 47.5%;
+        float: left;
+        margin-bottom: 23px;
+
+        &:nth-child(2n) {
+          float: right;
+        }
+      }
+
+      label {
+        display: block;
+        color: #fff;
+        // font-size: 13px;
+        font-size: 14px;
+        margin-bottom: 9px;
+
+        font-weight: 600;
+
+        @media (min-width: $template1400) {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .alert.alert-danger {
+        position: absolute;
+        bottom: -18px;
+        height: 16px;
+        display: block;
+        top: auto;
+        padding: 0;
+      }
+
+      select,
+      input {
+        background-color: transparent;
+        height: 52px;
+        border-radius: 3px;
+        border: 1px solid #3b638d;
+        padding-left: 21px;
+        box-sizing: border-box;
+
+        color: white;
+        font-size: 14px;
+
+        width: 100%;
+
+        @include input-placeholder {
+          color: rgba(255, 255, 255, 0.4);
+        }
+
+        @media (min-width: $template1400) {
+          height: 48px;
+          // font-size: 11px;
+          font-size: 14px;
+        }
+      }
+
+      option {
+        background: #1e3c5c;
+        line-height: 2;
+        height: 30px;
+        padding: 5px 0;
+      }
+    }
+
+    .field-block--select {
+      background-image: url('/ico/dropdown.svg');
+      background-repeat: no-repeat;
+      background-position: right 20px bottom 20px;
+      background-size: 14px;
+      padding-right: 0px;
+
+      @media (min-width: $template1400) {
+        background-position: right 20px bottom 20px;
+        background-size: 14px;
+      }
+    }
+
+    .agree-row {
+      margin-bottom: 18px;
+      // font-size: 11px;
+      font-size: 12px;
+      line-height: 1.9;
+      color: #fff;
+      clear: both;
+      opacity: 0.76;
+
+      padding-top: 10px;
+
+      @media (min-width: $template1400) {
+        padding-top: 10px;
+        // font-size: 11px;
+        font-size: 14px;
+        line-height: 2.1;
+        margin-bottom: 26px;
+      }
+    }
+
+    .button-row {
+      .button {
+        display: block;
+        width: 100%;
+        font-size: 13px;
+        height: 52px;
+        line-height: 52px;
+        margin: 0;
+
+        @media (min-width: $tabletVMin) {
+          display: block;
+          width: 180px;
+          font-size: 13px;
+          height: 52px;
+          line-height: 52px;
+        }
+        @media (min-width: $template1400) {
+          display: block;
+          font-size: 14px;
+          width: 260px;
+          height: 46px;
+          line-height: 46px;
+          border-radius: 3px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

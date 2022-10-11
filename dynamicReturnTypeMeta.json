@@ -1,0 +1,10 @@
+{
+  "methodCalls": [
+    {
+      "class": "\\Orchid\\Platform\\Fields\\Field",
+      "method": "tag",
+      "position": 0,
+      "fileReturnTypeReplacementCall": ["vendor/orchidcommunity/ide-helper/JavaScriptReplacementCallback.js", "fields"]
+    }
+  ]
+}

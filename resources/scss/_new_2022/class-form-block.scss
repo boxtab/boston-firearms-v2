@@ -1,0 +1,44 @@
+.class-form-block {
+  width: 100%;
+  max-width: 307px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 23px;
+  padding: 16px 23px 16px 23px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tabletVMin) {
+    margin: 10px;
+    margin-top: 70px;
+  }
+  @media (min-width: $template1400) {
+    // padding: 13px 31px 20px 31px;
+    padding: 36px 39px 34px 38px;
+
+    max-width: 414px;
+    margin: 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    margin-top: 70px;
+  }
+
+  .form-row {
+    min-height: 310px;
+
+    @media (min-width: $tabletVMin) {
+      min-height: 336px;
+    }
+
+    @media (min-width: $template1400) {
+      min-height: 536px;
+    }
+  }
+  .field-block {
+    .alert.alert-danger {
+      top: 0;
+    }
+  }
+}

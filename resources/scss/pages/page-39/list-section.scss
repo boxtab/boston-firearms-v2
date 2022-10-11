@@ -1,0 +1,71 @@
+.list-section {
+  background-color: #ffffff;
+
+  border-radius: 16px;
+  max-width: 830px;
+  margin: auto;
+  padding: 41px 33px 33px 33px;
+
+  @media (min-width: $tabletVMin) {
+    padding: 66px 77px 66px 60px;
+  }
+
+  .list-section-title {
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-family: $font700;
+    font-weight: 600;
+    text-align: center;
+
+    // font-size: 26px;
+    font-size: 22px;
+    @media (min-width: $tabletVMin) {
+      font-size: 20px;
+    }
+  }
+
+  .list {
+  }
+
+  .list-item {
+    padding: 25px 20px 25px 13px;
+    // margin: 10px;
+    border-top: dashed 1px #ccd7e5;
+    line-height: 1.54;
+    position: relative;
+    font-weight: 500;
+    // font-size: 22px;
+    // font-size: 18px;
+    font-size: 17px;
+
+    &:first-of-type {
+      border: none;
+    }
+
+    @media (min-width: $tabletVMin) {
+      // font-size: 16px;
+      padding: 25px 66px 25px 40px;
+    }
+
+    &:before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      display: block;
+      background-image: url('/ico/faq-2.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      left: 0px;
+      top: 34px;
+
+      @media (min-width: $tabletVMin) {
+        width: 8px;
+        height: 8px;
+        top: 32px;
+        left: 15px;
+      }
+    }
+  }
+}

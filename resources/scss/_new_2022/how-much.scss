@@ -1,0 +1,127 @@
+.how-much {
+  background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  @media (min-width: $template1400) {
+    // padding-top: 158px;
+    padding-top: 140px;
+    padding-bottom: 85px;
+  }
+
+  .title {
+    line-height: 1.5;
+    font-family: $font700;
+    font-weight: 700;
+    text-align: center;
+    // font-size: 24px;
+    font-size: 23px;
+    margin-bottom: 48px;
+    padding: 0;
+
+    @media (min-width: $template1400) {
+      // font-size: 20px;
+      font-size: 24px;
+      margin-bottom: 32px;
+      text-align: center;
+      padding: 0 42px;
+    }
+  }
+
+  .bordered-block {
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $template1400) {
+      width: 610px;
+      margin: auto;
+      border: 1px dashed #cdd9e8;
+      border-radius: 16px;
+    }
+  }
+
+  .cost {
+    font-size: 28px;
+    text-align: center;
+    color: $color-theme;
+    margin-bottom: 38px;
+    font-family: $font700;
+
+    @media (min-width: $template1400) {
+      font-size: 32px;
+      line-height: 82px;
+      border-bottom: 1px dashed #cdd9e8;
+      margin-bottom: 0;
+    }
+  }
+
+  .description {
+    margin: 0;
+    padding: 0 18px;
+    list-style: none;
+    margin-bottom: 62px;
+
+    @media (min-width: $template1400) {
+      padding: 5px 22px 0px;
+      margin-bottom: 44px;
+    }
+
+    li {
+      color: $color-theme-2;
+      // font-size: 12px;
+      font-size: 17px;
+      line-height: 2;
+      margin-bottom: 24px;
+      font-family: $font500;
+
+      @media (min-width: $template1400) {
+        // font-size: 14px;
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 38px;
+      }
+    }
+  }
+
+  .button-row {
+    padding-top: 0;
+
+    @media (min-width: $template1400) {
+      padding-top: 18px;
+      text-align: center;
+    }
+  }
+
+  .button {
+    display: block;
+    margin-top: 20px;
+    // width: 180px;
+    width: 100%;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+
+    @media (min-width: $tabletVMin) {
+      display: block;
+      font-size: 14px;
+      width: 260px;
+      max-width: 260px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 6px;
+      padding-left: 29px;
+      padding-right: 29px;
+    }
+    @media (min-width: $template1400) {
+      display: block;
+      font-size: 14px;
+      width: 260px;
+      max-width: 260px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 6px;
+      padding-left: 29px;
+      padding-right: 29px;
+    }
+  }
+}

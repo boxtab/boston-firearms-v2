@@ -1,0 +1,67 @@
+//$mobile                 : 375px;
+$mobile: 480px;
+$mobileResponsiveMin: 481px;
+$smallScreenHeight: 700px;
+$mobileResponsiveMax: 767px;
+$tabletVMin: 768px;
+$tabletVMax: 1023px;
+$tabletH: 1024px;
+
+$template1400: 1024px; // min width for the new design
+$template1400FullPre: 1399px; //
+$template1400Full: 1400px; // full width for the new design
+
+// Small mobiles
+@media (max-height: $smallScreenHeight) {
+}
+
+// Responsive Mobile
+@media (min-width: $mobileResponsiveMin) and (max-width: $mobileResponsiveMax) {
+}
+
+// Responsive Tablet
+@media (min-width: $tabletVMin) and (max-width: $tabletVMax) {
+}
+
+// Desktop
+@media (min-width: $template1400) {
+}
+
+// Homepage Zoom
+$pageZoomMobile: 0.85;
+$pageZoomTabletV: 1.4;
+
+// Fonts START
+$font: 'Commissioner', sans-serif;
+$font700: 'PoppinsBold', sans-serif;
+$font600: 'PoppinsSemiBold', sans-serif;
+$font400: 'PoppinsRegular', sans-serif;
+$font500: 'PoppinsMedium', sans-serif;
+$font300: 'PoppinsLight', sans-serif;
+// $font500: 'PoppinsSemiBold', sans-serif;
+
+// Color
+$color-theme: #d8374f;
+$color-theme-2: #1e3c5c;
+$color-counter: #ff5872;
+$color-counter-2: #272727;
+$color-input: #697280;
+$color-dot: #ecedef;
+$color-dot-passed: $color-theme-2;
+$color-page-bg: #eef2f7;
+$color-page-start: $color-page-bg;
+$color-footer: $color-theme-2;
+$color-footer-grey: #eef2f7;
+$color-footer-link: #ff8698;
+$color-important: #495667;
+$color-important-description: #2a3e58;
+$color-important-bg: #f5faff;
+$color-important-border: #cdd9e8;
+$color-tab: #dee6f2;
+$color-tab-current: $color-theme-2;
+$color-step: #79899f;
+$color-reasons-bg: $color-theme-2;
+$color-reasons-border: rgba(205, 217, 232, 0.2);
+$color-testimonial: #4f5764;
+$color-review: $color-testimonial;
+$color-button-hover: #e02642;

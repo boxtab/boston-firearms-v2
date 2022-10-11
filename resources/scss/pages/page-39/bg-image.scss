@@ -1,0 +1,39 @@
+.bg-image {
+  background-image: url('/images/page-39/list-bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  padding-top: 154px;
+  // padding-left: 23px;
+  // padding-right: 23px;
+
+  @media (min-width: $tabletVMin) {
+    background-image: url('/images/page-39/list-bg--desktop.jpg');
+  }
+
+  @media (min-width: $template1400) {
+    background-size: cover;
+    padding-top: 135px;
+    padding-bottom: 135px;
+  }
+
+  &.bg-image--cta {
+    background-image: url('/images/page-39/cta-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-top: 82px;
+    padding-bottom: 62px;
+    // padding-left: 34px;
+    // padding-right: 34px;
+
+    @media (min-width: $tabletVMin) {
+      background-image: url('/images/page-39/cta-bg--desktop.jpg');
+    }
+
+    @media (min-width: $template1400) {
+      height: 560px;
+      padding-top: 110px;
+    }
+  }
+}

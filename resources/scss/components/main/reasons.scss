@@ -1,0 +1,82 @@
+.reasons-section {
+  background-color: $color-reasons-bg;
+  padding-top: 37px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 78px;
+  width: calc(100% + 48px);
+  margin-left: -24px;
+
+  @media (min-width: $template1400) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .reasons-title {
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    font-family: $font700;
+    font-weight: 600;
+    margin-bottom: 45px;
+    padding: 0 30px;
+    font-size: 26px;
+
+    @media (min-width: $tabletVMin) {
+      font-size: 20px;
+    }
+  }
+
+  .reasons {
+    overflow: hidden;
+
+    @media (min-width: $tabletVMin) {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .reason {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      height: 104px;
+      width: 50%;
+      float: left;
+      flex-direction: column;
+      overflow: hidden;
+      justify-content: space-around;
+      text-align: center;
+      padding-left: 17px;
+      padding-right: 17px;
+      padding-top: 27px;
+      padding-bottom: 18px;
+
+      &:nth-child(1) {
+        border-right: dashed 1px $color-reasons-border;
+        border-bottom: dashed 1px $color-reasons-border;
+      }
+      &:nth-child(2) {
+        border-bottom: dashed 1px $color-reasons-border;
+      }
+      &:nth-child(3) {
+        border-right: dashed 1px $color-reasons-border;
+      }
+
+      .ico {
+        margin-bottom: 11px;
+      }
+
+      .text {
+        line-height: 1.4;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+
+        @media (min-width: $tabletVMin) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

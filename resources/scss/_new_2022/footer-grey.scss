@@ -1,0 +1,289 @@
+.footer-grey {
+  background-color: $color-footer-grey;
+
+  width: 100%;
+  overflow: hidden;
+
+  padding: 0;
+
+  .desktop-wide-wrap {
+    padding: 0;
+
+    padding-top: 36px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+
+    @media (min-width: $template1400) {
+      padding-top: 54px;
+      padding-left: 60px;
+      padding-bottom: 109px;
+      padding-right: 0;
+    }
+    @media (min-width: $template1400Full) {
+      padding-left: 150px;
+    }
+  }
+
+  .logo-03 {
+    @media (max-width: $mobileResponsiveMax) {
+      width: 200px;
+      height: 40px;
+      background-size: 200px;
+    }
+  }
+
+  p {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-align-last: left;
+    font-size: 16px;
+
+    @media (min-width: $template1400) {
+      // font-size: 18px;
+      font-size: 17px;
+    }
+  }
+
+  a {
+    color: #000;
+    // font-size: 15px;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+
+    @media (min-width: $template1400) {
+      font-size: 13px;
+    }
+  }
+
+  .social-footer {
+    padding-top: 30px;
+
+    @media (min-width: $template1400) {
+      padding-top: 12px;
+    }
+
+    a {
+      margin-right: 6px;
+
+      @media (min-width: $template1400) {
+        margin-right: 6px;
+      }
+    }
+
+    .ico {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .col {
+    @media (min-width: $template1400) {
+      width: 30%;
+      float: left;
+      overflow: hidden;
+      text-align-last: left;
+    }
+  }
+
+  .col-1 {
+    margin-bottom: 40px;
+
+    @media (min-width: $template1400) {
+      width: 36%;
+      margin-bottom: 0;
+      //   width: 725px;
+    }
+
+    .logo-03 {
+      @media (min-width: $template1400) {
+        width: 202px;
+        height: 42px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        position: relative;
+        top: 7px;
+      }
+    }
+
+    .text {
+      margin-bottom: 20px;
+      max-width: 270px;
+      margin-top: 14px;
+      line-height: 1.5;
+
+      @media (max-width: $mobileResponsiveMax) {
+        max-width: 270px;
+        line-height: 1.9;
+        font-size: 14px;
+        margin-top: 18px;
+        margin-bottom: 46px;
+      }
+
+      @media (min-width: $template1400) {
+        font-size: 13px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        margin-top: 24px;
+        line-height: 2;
+      }
+    }
+
+    .link {
+      a {
+        color: $color-theme;
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 15px;
+
+        @media (min-width: $template1400) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .col-2 {
+    margin-bottom: 30px;
+
+    @media (min-width: $template1400) {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 11px;
+
+      @media (min-width: $template1400) {
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: 0;
+
+        margin-bottom: 0;
+      }
+    }
+
+    .links {
+      p {
+        margin-bottom: 4px;
+        line-height: 1.5;
+
+        a {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .col-3 {
+    p {
+      margin-bottom: 21px;
+      font-family: $font700;
+
+      @media (min-width: $template1400) {
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: 0;
+
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .contact-block {
+    padding-left: 22px;
+
+    @media (min-width: $template1400) {
+      padding-left: 40px;
+    }
+
+    a {
+      display: block;
+      // font-size: 11px;
+      font-size: 12px;
+      line-height: 1.5;
+      position: relative;
+      color: $color-theme-2;
+
+      @media (min-width: $tabletVMin) {
+        // font-size: 12px;
+        font-size: 17px;
+      }
+      @media (min-width: $template1400) {
+        font-size: 17px;
+        font-weight: normal;
+
+        &.pin {
+          // margin-bottom: 14px;
+          margin-bottom: 4px;
+        }
+        &.phone {
+          // margin-bottom: 9px;
+          margin-bottom: 4px;
+        }
+      }
+
+      .ico {
+        position: absolute;
+        display: block;
+        left: -21px;
+        top: 4px;
+        width: 10px;
+        height: 12px;
+
+        @media (min-width: $template1400) {
+          left: -38px;
+          top: 4px;
+          width: 15px;
+          height: 22px;
+        }
+
+        &.phone-footer-blue {
+          width: 19px;
+        }
+      }
+    }
+
+    span {
+      color: $color-theme-2;
+      display: block;
+      // font-size: 10px;
+      font-size: 12px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+
+      @media (min-width: $tabletVMin) {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: $template1400) {
+        font-size: 12px;
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  .row-1 {
+    overflow: hidden;
+  }
+  .row-2 {
+    padding-top: 40px;
+    // font-size: 10px;
+    font-size: 12px;
+    overflow: hidden;
+    line-height: 1.5;
+    text-align: center;
+
+    @media (min-width: $tabletVMin) {
+      text-align: left;
+      padding-top: 52px;
+    }
+  }
+}

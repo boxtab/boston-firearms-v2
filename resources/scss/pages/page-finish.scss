@@ -1,0 +1,142 @@
+.page-finish {
+  padding-top: 50px;
+  background-color: $color-page-start;
+  min-height: 100vh;
+  overflow: hidden;
+
+  @media (max-height: $smallScreenHeight) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $tabletVMin) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $template1400) {
+    max-width: none;
+  }
+
+  .wrapper {
+    @media (min-width: $tabletVMin) {
+      background-color: $color-page-start;
+      margin: auto;
+      max-width: 90%;
+    }
+    @media (min-width: $template1400) {
+      max-width: 1024px;
+      background-color: $color-page-start;
+      margin: auto;
+    }
+  }
+
+  .action-row {
+    .ico {
+      float: right;
+      position: relative;
+      top: 5px;
+    }
+    .logo-03 {
+      float: left;
+    }
+  }
+
+  .link-row {
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: $font700;
+      font-weight: 500;
+      max-width: 300px;
+      display: block;
+      margin: auto;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .share-row {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $font700;
+    font-weight: 500;
+    text-align: center;
+
+    .social {
+      margin-top: 26px;
+    }
+  }
+
+  .button-row {
+    overflow: hidden;
+    margin-bottom: 28px;
+
+    &.result {
+      margin-top: 26px;
+      margin-bottom: 48px;
+    }
+  }
+
+  form {
+    overflow: hidden;
+    padding-top: 48px;
+    padding-right: 24px;
+    padding-bottom: 100px;
+
+    @media (min-width: $tabletVMin) {
+      max-width: 500px;
+      margin: auto;
+      clear: both;
+      padding-left: 0;
+      padding-right: 0;
+      left: 0;
+    }
+
+    .title {
+      margin-bottom: 45px;
+    }
+
+    strong {
+      text-align: center;
+      display: block;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000;
+      font-family: $font700;
+
+      &.main {
+        color: $color-theme;
+      }
+    }
+
+    .input-block {
+      height: 52px;
+      width: 100%;
+    }
+  }
+
+  .footer-small {
+    @media (min-width: $tabletVMin) and (max-width: $tabletVMax) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+    }
+    @media (min-width: $template1400) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

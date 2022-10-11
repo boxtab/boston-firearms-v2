@@ -1,0 +1,168 @@
+.testimonial-section {
+  background-color: $color-page-start;
+  padding-top: 54px;
+  padding-bottom: 39px;
+  width: calc(100% + 48px);
+  margin-left: -24px;
+
+  @media (min-width: $template1400) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .testimonial {
+    // .gr-item {
+    //   width: 30%;
+    // }
+
+    .gr-item {
+      width: 100vw;
+      padding-bottom: 50px;
+      background-color: #f6f8fb;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 40px;
+
+      @media (min-width: $tabletVMin) {
+        width: 500px;
+        height: 365px;
+        // TODO: Canged due to long text issue
+        // padding-left: 30px;
+        // padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+        padding-bottom: 0;
+        padding-top: 20px;
+      }
+
+      @media (min-width: $template1400) {
+        width: 600px;
+        height: 365px;
+        // TODO: Canged due to long text issue
+        // padding-left: 60px;
+        // padding-right: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        border-radius: 20px;
+        padding-bottom: 0;
+        padding-top: 40px;
+      }
+    }
+
+    .testimonial-title {
+      color: #000;
+      font-family: $font700;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1;
+      font-size: 16px;
+      margin-bottom: 19px;
+
+      @media (min-width: $tabletVMin) {
+        padding: 0;
+        font-size: 20px;
+      }
+    }
+    .testimonial-ico {
+      width: 17px;
+      height: 14px;
+      margin: auto;
+      background-image: url('/ico/quote.svg');
+      background-repeat: no-repeat;
+      background-size: 17px;
+      margin-bottom: 18px;
+    }
+    .testimonial-date {
+      color: $color-testimonial;
+      text-align: center;
+      line-height: 1.8;
+
+      font-size: 20px;
+      @media (min-width: $tabletVMin) {
+        font-size: 15px;
+      }
+    }
+    .testimonial-text {
+      color: $color-testimonial;
+      text-align: center;
+      line-height: 1.6;
+      font-size: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      @media (min-width: $tabletVMin) {
+        font-size: 20px;
+      }
+    }
+    .testimonial-image-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+      align-items: center;
+
+      .testimonial-image {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin-left: 14px;
+        margin-right: 14px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.slick-arrow.slick-prev {
+  width: 12px;
+  height: 8px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url('/ico/testimonial-arrow-left.svg');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 50% 50%;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+
+  z-index: 5;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -63px;
+}
+
+.slick-next.slick-arrow {
+  width: 12px;
+  height: 8px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url('/ico/testimonial-arrow-right.svg');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 50% 50%;
+  cursor: pointer;
+
+  color: transparent;
+  border: none;
+  outline: none;
+
+  z-index: 5;
+  position: absolute;
+  bottom: -7px;
+  right: 50%;
+  margin-right: -63px;
+}

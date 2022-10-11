@@ -1,0 +1,273 @@
+.ico {
+  &.arrow-back {
+    width: 19px;
+    height: 20px;
+    background-image: url('/ico/arrow-back.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  &.menu {
+    width: 18px;
+    height: 12px;
+    background-image: url('/ico/menu.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  &.close {
+    width: 12px;
+    height: 12px;
+    background-image: url('/ico/close.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  // Social icons
+  &.ico-fb {
+    width: 32px;
+    height: 32px;
+    background-image: url('/ico/facebook-circular-logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  &.ico-tw {
+    width: 32px;
+    height: 32px;
+    background-image: url('/ico/twitter.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  &.ico-in {
+    width: 32px;
+    height: 32px;
+    background-image: url('/ico/instagram.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  &.ico-wa {
+    width: 32px;
+    height: 32px;
+    background-image: url('/ico/whatsapp.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  // Social icons First page
+  &.ico-fb--top {
+    width: 32px;
+    height: 32px;
+    background-image: url('/ico/first-page/social-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 50px;
+      height: 50px;
+    }
+  
+  }
+  &.ico-tw--top {
+    width: 32px;
+    height: 32px;
+    background-image: url('/ico/first-page/social-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 50px;
+      height: 50px;
+    }
+   
+  }
+  &.ico-in--top {
+    width: 32px;
+    height: 32px;
+    background-image: url('/ico/first-page/social--instagram.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &.ico-sh--top {
+    width: 22px;
+    height: 20px;
+    background-image: url('/ico/first-page/social-share.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 35px;
+      height: 31px;
+    }
+    
+  }
+  &.ico-fb--footer {
+    width: 23px;
+    height: 23px;
+    background-image: url('/ico/first-page/footer-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 42px;
+      height: 43px;
+    }
+    
+  }
+  &.ico-fb--footer-blue {
+    width: 23px;
+    height: 23px;
+    background-image: url('/ico/first-page/footer-facebook-blue.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 42px;
+      height: 43px;
+    }
+    
+  }
+  &.ico-tw--footer {
+    width: 23px;
+    height: 23px;
+    background-image: url('/ico/first-page/footer-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 42px;
+      height: 43px;
+    }
+ 
+  }
+  &.ico-tw--footer-blue {
+    width: 23px;
+    height: 23px;
+    background-image: url('/ico/first-page/footer-twitter-blue.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 42px;
+      height: 43px;
+    }
+    
+  }
+  &.ico-in--footer {
+    width: 23px;
+    height: 23px;
+    background-image: url('/ico/first-page/footer-instagram.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 42px;
+      height: 43px;
+    }
+    
+  }
+  &.ico-in--footer-blue {
+    width: 23px;
+    height: 23px;
+    background-image: url('/ico/first-page/footer-instagram-blue.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 42px;
+      height: 43px;
+    }
+    
+  }
+  &.ico-wa--footer {
+    width: 23px;
+    height: 23px;
+    background-image: url('/ico/first-page/footer-whatsapp.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 42px;
+      height: 43px;
+    }
+    
+  }
+
+  &.pin-footer {
+    width: 8px;
+    height: 12px;
+    background-image: url('/ico/first-page/footer-pin.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 16px;
+      height: 24px;
+    }
+    
+  }
+
+  &.pin-footer-blue {
+    width: 8px;
+    height: 12px;
+    background-image: url('/ico/first-page/footer-pin-blue.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 16px;
+      height: 24px;
+    }
+    
+  }
+  &.phone-footer {
+    width: 12px;
+    height: 12px;
+    background-image: url('/ico/first-page/footer-phone-call.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 23px;
+      height: 23px;
+    }
+    
+  }
+  &.phone-footer-blue {
+    width: 12px;
+    height: 12px;
+    background-image: url('/ico/first-page/footer-phone-call-blue.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @media (min-width: $template1400) {
+      width: 23px;
+      height: 23px;
+    }
+    
+  }
+}

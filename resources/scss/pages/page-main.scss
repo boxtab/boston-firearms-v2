@@ -1,0 +1,206 @@
+// !!! Temporarily removed from app.scss !!!
+.page-main {
+  padding-top: 50px;
+  background-color: $color-page-start;
+  overflow: hidden;
+
+  @media (max-height: $smallScreenHeight) {
+    padding-top: 20px;
+  }
+
+  // @media (max-height: $smallScreenHeight) {
+  //   zoom: $pageZoomMobile;
+  // }
+
+  // @media (min-width: $tabletVMin) and (max-width: $tabletVMax) {
+  //   zoom: $pageZoomTabletV;
+  // }
+
+  // @media (min-width: $desktopLanding) and (max-width: 1200px) {
+  //     zoom: 1.2;
+  // }
+
+  // @media (min-width: $desktopLanding) {
+  //     zoom: 1.2;
+  // }
+
+  // @media (min-width: 1200px) and (max-width: $desktopPre) {
+  //     zoom: 1.2;
+  // }
+
+  @media (min-width: $template1400) {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // .desktop-wide-wrap {
+  //   padding: 0;
+
+  //   @media (min-width: $template1400) {
+  //     padding-left: 50px;
+  //     padding-right: 50px;
+  //   }
+  // }
+
+  .section {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    .container {
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      @media (min-width: $template1400) {
+        margin: auto;
+        padding-left: 34px;
+        padding-right: 27px;
+        max-width: 980px;
+      }
+    }
+  }
+
+  .action-row {
+    margin-bottom: 43px;
+
+    .ico {
+      float: right;
+      position: relative;
+      top: 5px;
+    }
+    .logo-03 {
+      float: left;
+    }
+  }
+
+  .hero {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+
+    @media (max-height: $smallScreenHeight) {
+      // height: 80px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      // font-size: 22px;
+      // line-height: 33px;
+      line-height: 1.5;
+
+      @media (min-width: $tabletVMin) {
+        font-size: 28px;
+      }
+
+      .colored {
+        color: $color-theme;
+      }
+    }
+
+    .subtitle {
+      font-weight: 500;
+      // font-size: 18px;
+      font-size: 24px;
+      // line-height: 24px;
+      line-height: 1.3;
+      text-align: center;
+      color: #000;
+      margin-bottom: 20px;
+
+      @media (min-width: $tabletVMin) {
+        font-size: 24px;
+      }
+    }
+
+    strong {
+      text-align: center;
+      display: block;
+      // font-size: 20px;
+      font-size: 30px;
+      // line-height: 30px;
+      line-height: 1.5;
+      color: #000;
+      font-family: $font700;
+
+      @media (min-width: $tabletVMin) {
+        font-size: 26px;
+      }
+
+      &.main {
+        color: $color-theme;
+      }
+    }
+
+    img {
+      &.img-mobile {
+        margin-bottom: 25px;
+        display: block;
+        width: 540px;
+        margin-right: 30px;
+
+        @media (min-width: $tabletVMin) {
+          display: none;
+        }
+      }
+      &.img-desktop {
+        display: none;
+
+        @media (min-width: $tabletVMin) {
+          display: block;
+          width: 600px;
+        }
+        @media (min-width: $template1400) {
+          width: 700px;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    background-color: #fff;
+    margin-left: -24px;
+    width: calc(100% + 48px);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 45px;
+    padding-bottom: 37px;
+
+    @media (min-width: $template1400) {
+      margin-left: 0;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .important {
+      margin-top: 16px;
+      margin-bottom: 47px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media (min-width: $tabletVMin) {
+        max-width: 500px;
+        margin: auto;
+        margin-top: 16px;
+        margin-bottom: 47px;
+      }
+
+      .text {
+        padding: 0;
+        font-family: $font700;
+        font-weight: 600;
+      }
+    }
+  }
+}

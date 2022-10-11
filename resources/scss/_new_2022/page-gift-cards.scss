@@ -1,0 +1,12 @@
+.page-gift-cards {
+  .gift-cards-section {
+    position: relative;
+
+    @media (min-width: $tabletVMin) {
+    }
+
+    @media (min-width: $template1400) {
+      padding-top: 123px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@include('includes.classes.partials.steps-horizontal')
+@include('includes.classes.partials.who-for')
+@include('includes.home.reviews')
+@include('includes.classes.partials.expected')
+@include('includes.classes.partials.philosophy')
+@include('includes.classes.partials.how-much')
+@include('includes.classes.partials.map-bg-dark')

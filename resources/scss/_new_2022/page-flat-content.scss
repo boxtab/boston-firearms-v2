@@ -1,0 +1,225 @@
+// Header 50-80-110px
+// Footer - desktop 487px
+
+.page-flat {
+  background-color: #eef2f7;
+
+  // Common offsets
+  .page-flat-content {
+    // background-color: red;
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    @media (min-width: $tabletVMin) {
+      padding-top: 110px;
+      // padding-bottom: 80px;
+      padding-bottom: 50px;
+    }
+    @media (min-width: $template1400) {
+      // padding-top: 110px;
+      padding-top: 123px;
+      padding-bottom: 80px;
+
+      // min-height: calc(100vh - 110px - 447px);
+      min-height: calc(100vh - 487px);
+    }
+  }
+
+  // Text style
+
+  .page-flat-content {
+    line-height: 1.5;
+
+    @media (max-width: $mobileResponsiveMax) {
+      line-height: 1.9;
+      font-size: 14px;
+    }
+
+    @media (min-width: $template1400) {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 2;
+    }
+
+    h1 {
+      font-family: $font700;
+      text-transform: uppercase;
+      // font-size: 24px;
+      font-size: 23px;
+      font-weight: 700;
+      color: #1e3c5c;
+      line-height: 1.4;
+      margin-bottom: 24px;
+      text-align: center;
+      margin-bottom: 49px;
+
+      @media (min-width: $tabletVMin) {
+        text-align: left;
+        // font-size: 32px;
+        font-size: 24px;
+        line-height: 2;
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: $template1400) {
+        // font-size: 32px;
+        // line-height: 2;
+        // margin-bottom: 30px;
+      }
+    }
+
+    p {
+      color: #79899f;
+      font-size: 17px;
+      text-align: left;
+      line-height: 1.8;
+      margin-bottom: 32px;
+
+      @media (min-width: $tabletVMin) {
+        // font-size: 18px;
+        font-size: 17px;
+        text-align: left;
+      }
+
+      @media (min-width: $template1400) {
+        // font-size: 18px;
+        font-size: 17px;
+        margin-bottom: 22px;
+      }
+
+      b {
+        font-family: $font700;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 734px;
+      border-radius: 16px;
+      margin: auto;
+
+      margin-top: 68px;
+      margin-bottom: 68px;
+
+      @media (min-width: $template1400) {
+        // max-width: 500px;
+        width: 45%;
+        margin: 0;
+      }
+
+      &.img-mobile {
+        display: block;
+
+        @media (min-width: $template1400) {
+          display: none;
+        }
+      }
+
+      &.img-desktop {
+        display: none;
+
+        @media (min-width: $template1400) {
+          display: block;
+        }
+      }
+    }
+
+    .flat-content-row {
+      @media (min-width: $template1400) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 22px;
+
+        &.reverse {
+          flex-direction: row-reverse;
+        }
+
+        p,
+        img {
+          width: 48%;
+          margin: 0;
+        }
+      }
+    }
+
+    .agree-row {
+      form {
+        input {
+          display: none;
+        }
+        .check {
+          width: 45px;
+          height: 45px;
+          background-color: #fff;
+          border: 2px solid #707070;
+          border-radius: 6px;
+          margin-right: 13px;
+          display: block;
+        }
+        label {
+          font-family: $font600;
+          font-size: 18px;
+          color: #79899f;
+
+          height: 45px;
+          margin-bottom: 74px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        input:checked + label {
+          .check {
+            background-color: #d8374f;
+          }
+        }
+      }
+    }
+
+    .select-who-row {
+      // width: 375px;
+      width: calc(100% + 48px);
+      min-height: 281px;
+      margin-left: -24px;
+      margin-bottom: 50px;
+      padding: 32px 10px 30px;
+      border-radius: 13px;
+      background-color: rgba(30, 60, 92, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      @media (min-width: $tabletVMin) {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+
+      h4 {
+        font-size: 18px;
+        line-height: 1.11;
+        text-align: center;
+        color: #1e3c5c;
+        font-family: $font700;
+        margin-bottom: 33px;
+      }
+
+      a {
+        display: inline-block;
+        margin: auto;
+        width: auto;
+        padding: 8px 28px 9px 23px;
+        margin-bottom: 16px;
+        border-radius: 6px;
+        background-color: #d8374f;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+}

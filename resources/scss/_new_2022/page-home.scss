@@ -1,0 +1,39 @@
+.page-home {
+  padding: 0;
+  max-width: none;
+
+  .section {
+    .container {
+      padding-left: 34px;
+      padding-right: 27px;
+      width: 100%;
+
+      @media (min-width: $template1400) {
+        max-width: 1549px;
+        margin: auto;
+      }
+    
+    }
+
+    &.google-map {
+      height: 296px;
+
+      @media (min-width: $template1400) {
+        height: 683px;
+      }
+  
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .location-section {
+    .desktop-wide-wrap {
+      @media (min-width: $template1400) {
+        padding-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.footer-small-fixed {
+    background-color: $color-footer;
+    height: 101px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 28px;
+    width: 100%;
+
+    p {
+      text-align: center;
+      color: #fff;
+      font-size: 13px;
+      margin-bottom: 12px;
+      font-weight: bold;
+
+      @media (min-width: $tabletVMin) {
+        font-size: 16px;
+    }
+
+        a {
+            color: $color-footer-link;
+            font-size: 12px;
+            text-decoration: none;
+            font-weight: bold;
+
+            @media (min-width: $tabletVMin) {
+                font-size: 15px;
+            }
+        }
+    }
+}

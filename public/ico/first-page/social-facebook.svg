@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Facebook" transform="translate(0 0.233)">
+    <circle id="Oval" cx="25" cy="25" r="25" transform="translate(0 -0.233)" fill="#3d5a96"/>
+    <path id="Facebook-2" data-name="Facebook" d="M6.865,20.65H2.288V10.9H0V7.141H2.288V4.887C2.288,1.824,3.579,0,7.249,0H10.3V3.758H8.395c-1.429,0-1.524.525-1.524,1.5L6.865,7.141h3.46L9.92,10.9H6.865V20.65Z" transform="translate(20.328 14.583)" fill="#fff"/>
+  </g>
+</svg>

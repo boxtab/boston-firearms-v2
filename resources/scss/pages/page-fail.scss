@@ -1,0 +1,82 @@
+.page-fail {
+  padding-top: 50px;
+  background-color: $color-page-start;
+
+  @media (max-height: $smallScreenHeight) {
+    padding-top: 20px;
+  }
+
+  // @media (max-height: $smallScreenHeight) {
+  //     padding-top: 0;
+  // }
+
+  @media (min-width: $template1400) {
+    max-width: none;
+  }
+
+  .hero {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+
+    @media (max-height: $smallScreenHeight) {
+      height: 80px;
+      margin-bottom: 50px;
+    }
+
+    div {
+      display: flex;
+    }
+  }
+
+  .find-out {
+    text-align: center;
+    margin-bottom: 84px;
+
+    @media (max-height: $smallScreenHeight) {
+      margin-bottom: 50px;
+    }
+
+    strong {
+      text-align: center;
+      display: block;
+      font-size: 27px;
+      line-height: 40px;
+      color: #000;
+      font-family: $font700;
+
+      &.main {
+        color: $color-theme;
+      }
+    }
+  }
+
+  .link-row {
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    color: #000;
+    font-size: 16px;
+    line-height: 20px;
+    // font-family: $font700;
+    // font-weight: 500;
+    max-width: 550px;
+    display: block;
+    margin: auto;
+
+    a {
+      // text-decoration: none;
+      color: $color-theme;
+      font-family: $font700;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

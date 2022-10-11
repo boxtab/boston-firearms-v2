@@ -1,0 +1,86 @@
+.class-calendar-block {
+  width: 100%;
+  max-width: 307px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px 23px 16px 23px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tabletVMin) {
+    margin: 10px;
+    margin-top: 40px;
+  }
+  @media (min-width: $template1400) {
+    padding: 13px 31px 20px 31px;
+    max-width: 414px;
+    margin: 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    margin-top: 40px;
+  }
+
+  .unavailable-row {
+    min-height: 310px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $tabletVMin) {
+      min-height: 336px;
+    }
+
+    @media (min-width: $template1400) {
+      min-height: 422px;
+    }
+
+    p {
+      font-family: $font500;
+      text-align: center;
+      color: #79899f;
+      font-size: 19px;
+      line-height: 1.3;
+
+      @media (min-width: $template1400) {
+        font-size: 28px;
+      }
+    }
+  }
+  .calendar-row {
+    min-height: 310px;
+
+    @media (min-width: $tabletVMin) {
+      min-height: 336px;
+    }
+
+    @media (min-width: $template1400) {
+      min-height: 422px;
+    }
+  }
+
+  .button-row {
+    padding-top: 16px;
+
+    @media (min-width: $template1400) {
+      padding-top: 25px;
+    }
+
+    .button {
+      height: 37px;
+      line-height: 37px;
+      font-size: 8px;
+      text-transform: uppercase;
+      width: 136px;
+
+      @media (min-width: $template1400) {
+        height: 51px;
+        line-height: 51px;
+        font-size: 13px;
+        text-transform: uppercase;
+        width: 186px;
+      }
+    }
+  }
+}
